@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+dataset/
+dataset_structured_9kelas/

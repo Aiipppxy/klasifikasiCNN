@@ -1,0 +1,221 @@
+{
+  "project_title": "Klasifikasi 9 Kelas Organisme Laut (Oceanic Life) Menggunakan CNN",
+  "label_mode": "zeroshot",
+  "arch_mode": "CNN_OceanicLife_MobileNetV2",
+  "num_classes": 9,
+  "classes": [
+    "coral",
+    "crab",
+    "fish",
+    "octopus",
+    "other",
+    "seal",
+    "shark",
+    "starfish",
+    "turtle"
+  ],
+  "img_size": 160,
+  "channels": 3,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "fine_tune_lr": 2e-05,
+  "batch_size": 32,
+  "epochs_trained": 13,
+  "raw_total_files": 7960,
+  "corrupt_removed": 8,
+  "duplicates_removed": 6930,
+  "clean_total_images": 1007,
+  "split_ratio": "80% Training : 20% Validation/Test",
+  "n_train": 805,
+  "n_val": 202,
+  "n_test": 202,
+  "train_pct": 79.9,
+  "test_pct": 20.1,
+  "class_counts": {
+    "coral": 144,
+    "crab": 59,
+    "fish": 257,
+    "octopus": 35,
+    "other": 318,
+    "seal": 69,
+    "shark": 55,
+    "starfish": 33,
+    "turtle": 37
+  },
+  "imbalance_ratio": 9.64,
+  "width_range": [
+    32,
+    6144
+  ],
+  "height_range": [
+    32,
+    4378
+  ],
+  "color_modes": {
+    "RGB": 996,
+    "L": 1,
+    "RGBA": 6,
+    "P": 4
+  },
+  "metrics": {
+    "accuracy": 0.7772,
+    "precision_macro": 0.8044,
+    "recall_macro": 0.826,
+    "f1_macro": 0.8109,
+    "precision_weighted": 0.7778,
+    "recall_weighted": 0.7772,
+    "f1_weighted": 0.7732
+  },
+  "per_class": [
+    {
+      "class": "coral",
+      "precision": 0.7097,
+      "recall": 0.7586,
+      "f1_score": 0.7333,
+      "support": 29
+    },
+    {
+      "class": "crab",
+      "precision": 0.7333,
+      "recall": 0.9167,
+      "f1_score": 0.8148,
+      "support": 12
+    },
+    {
+      "class": "fish",
+      "precision": 0.7544,
+      "recall": 0.8431,
+      "f1_score": 0.7963,
+      "support": 51
+    },
+    {
+      "class": "octopus",
+      "precision": 0.8333,
+      "recall": 0.7143,
+      "f1_score": 0.7692,
+      "support": 7
+    },
+    {
+      "class": "other",
+      "precision": 0.7925,
+      "recall": 0.6562,
+      "f1_score": 0.7179,
+      "support": 64
+    },
+    {
+      "class": "seal",
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1_score": 0.9333,
+      "support": 14
+    },
+    {
+      "class": "shark",
+      "precision": 0.6667,
+      "recall": 0.5455,
+      "f1_score": 0.6,
+      "support": 11
+    },
+    {
+      "class": "starfish",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 7
+    },
+    {
+      "class": "turtle",
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1_score": 0.9333,
+      "support": 7
+    }
+  ],
+  "history": {
+    "accuracy": [
+      0.4149068295955658,
+      0.6484472155570984,
+      0.7428571581840515,
+      0.7714285850524902,
+      0.8161490559577942,
+      0.8447204828262329,
+      0.8484472036361694,
+      0.8670807480812073,
+      0.7093167901039124,
+      0.7664596438407898,
+      0.7540372610092163,
+      0.7590062022209167,
+      0.747826099395752
+    ],
+    "loss": [
+      1.5405731201171875,
+      0.6725549697875977,
+      0.5316285490989685,
+      0.3964143693447113,
+      0.32039013504981995,
+      0.2919216454029083,
+      0.2328910529613495,
+      0.21494166553020477,
+      0.6071323752403259,
+      0.5641694664955139,
+      0.4300472140312195,
+      0.4426642060279846,
+      0.5089864730834961
+    ],
+    "val_accuracy": [
+      0.6188119053840637,
+      0.7178217768669128,
+      0.7326732873916626,
+      0.7673267126083374,
+      0.7772276997566223,
+      0.7722772359848022,
+      0.7772276997566223,
+      0.7871286869049072,
+      0.7772276997566223,
+      0.7821782231330872,
+      0.7772276997566223,
+      0.7673267126083374,
+      0.7623762488365173
+    ],
+    "val_loss": [
+      1.0504114627838135,
+      0.7822807431221008,
+      0.7223471999168396,
+      0.6909988522529602,
+      0.6916550993919373,
+      0.695283055305481,
+      0.7136262655258179,
+      0.7061352133750916,
+      0.7039735913276672,
+      0.721310019493103,
+      0.7398008108139038,
+      0.7561770081520081,
+      0.7699819207191467
+    ],
+    "learning_rate": [
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0005000000237487257,
+      0.0005000000237487257,
+      1.9999999494757503e-05,
+      1.9999999494757503e-05,
+      1.9999999494757503e-05,
+      9.999999747378752e-06,
+      9.999999747378752e-06
+    ]
+  },
+  "analisis": {
+    "distribusi": "Dari total 7960 file mentah, ditemukan 8 file rusak dan 6930 duplikat identik (MD5), sehingga tersisa 1007 gambar unik yang tersebar di 9 kelas organisme laut. Kelas dengan sampel terbanyak adalah 'other' (318 gambar), sedangkan kelas tersedikit adalah 'starfish' (33 gambar) dengan rasio ketidakseimbangan 9.64:1. Ketidakseimbangan ini telah ditangani menggunakan Stratified Split (80% Train : 20% Test/Val) dan Class Weighting.",
+    "contoh_gambar": "Visualisasi sampel dari ke-9 kelas menunjukkan variasi pencahayaan bawah air (dominasi spektrum biru-hijau), perbedaan skala objek, serta kemiripan tekstur latar belakang terumbu karang. Oleh karena itu dilakukan normalisasi piksel [0, 1] dan augmentasi rotasi/flip/zoom.",
+    "ukuran": "Resolusi asli gambar bervariasi antara lebar 32–6144 piksel dan tinggi 32–4378 piksel, dengan distribusi format warna {'RGB': 996, 'L': 1, 'RGBA': 6, 'P': 4}. Seluruh gambar diseragamkan ke ukuran 160x160 piksel RGB agar dimensi input tensor CNN konsisten.",
+    "training": "Selama 13 epoch pelatihan, Training Accuracy meningkat hingga 74.78% dan Validation Accuracy mencapai 76.24%. Penurunan kurva Training Loss (0.5090) dan Validation Loss (0.7700) menunjukkan konvergensi model. Selisih akurasi latih dan validasi pada epoch terakhir adalah -1.46 poin persentase (generalisasi relatif baik).",
+    "confusion_matrix": "Confusion Matrix memperlihatkan konsentrasi nilai tinggi pada diagonal utama yang menandakan mayoritas prediksi tepat sasaran. Pasangan kelas yang paling sering tertukar adalah: other -> fish (10 sampel), fish -> other (5 sampel), other -> coral (5 sampel), yang kemungkinan dipengaruhi oleh kemiripan siluet tubuh di perairan terbuka maupun latar terumbu karang.",
+    "evaluasi": "Model meraih Accuracy 77.72%, Precision (Macro) 80.44%, Recall (Macro) 82.60%, dan F1-Score (Macro) 81.09% (Weighted F1: 77.32%). F1-Score macro mencerminkan keseimbangan antara presisi dan sensitivitas model. Kelas yang paling mudah dikenali adalah 'starfish' (F1: 100.0%), sedangkan kelas tersulit adalah 'shark' (F1: 60.0%).",
+    "gradcam": "Visualisasi Feature Importance menggunakan Grad-CAM menandai area gambar yang paling memengaruhi keputusan jaringan konvolusi (CNN) (merah = pengaruh tinggi). Jika area merah berada pada tubuh organisme, model belajar dari fitur yang tepat; jika berada pada latar belakang, model berpotensi mengandalkan konteks seperti warna air.",
+    "prediksi": "Dari 12 gambar uji yang ditampilkan, 11 diprediksi benar. Kesalahan prediksi dapat terjadi pada gambar dengan objek berukuran sangat kecil, terhalang bayangan bawah air, atau memiliki lebih dari satu biota laut dalam satu frame."
+  }
+}
